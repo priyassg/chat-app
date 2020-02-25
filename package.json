@@ -1,15 +1,24 @@
 {
-  "name": "doordash-chat-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "frontend-project",
+  "version": "1.0.0",
+  "description": "The Frontend take home project for DoorDash",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "api-server": "node server.js"
   },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "author": "Ryan Gonzalez",
+  "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "shortid": "^2.2.8",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
@@ -18,7 +27,10 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "serve": "^3.1.0",
+    "express": "~4.0.0",
+    "body-parser": "~1.0.1"
   },
   "eslintConfig": {
     "root": true,
