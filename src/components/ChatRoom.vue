@@ -1,7 +1,7 @@
 <template>
     <div class="chat-room">
         <div class="room-details">
-            <h1>{{this.roomDetails.name}}</h1>
+            <h2>{{this.roomDetails.name}}</h2>
             Users: 
             <span v-for="user in this.roomDetails.users" :key="user.id">
                 {{user}} |
@@ -80,13 +80,20 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .chat-room{
         display: grid;
         grid-template-rows: 30% 60% 10%;
+
+        .room-details{
+            box-shadow: 0px 1px 5px grey;
+            text-align: center;
+            color: #606060;
+            z-index: 1;
+        }
     }
     .messages{
-        background-color: lightgray;
+        background-color: #f8f8f8;
         overflow-y: auto;
     }
     .message-item{

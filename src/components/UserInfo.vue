@@ -1,5 +1,5 @@
 <template>
-    <div>UserInfo {{this.username}}</div>
+    <div>{{this.username}}</div>
 </template>
 
 <script>
@@ -12,3 +12,9 @@ export default {
     }
 }
 </script>
+
+<style scoped lang="scss">
+    div{
+        font-size: x-large;
+    }
+</style>

@@ -35,25 +35,24 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
     .login-page{
-        width: 20rem;
-    }
-    input{
-        margin-bottom: 2rem;
-        width: 100%;
-        box-sizing: border-box;
-        height: 3rem;
-        border-radius: 5px;
-        box-shadow: none;
-        font-size: 1em;
-    }
-    button{
-        background-color: red;
-        width: 100%;
-        height: 3rem;
-        border-radius: 5px;
-        color: white;
-        font-size: 1em;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        input{
+            width: 25rem;
+            height: 3rem;
+        }
+        button{
+            background-color: red;
+            width: 100%;
+            height: 3rem;
+            border-radius: 2px;
+            color: white;
+            font-size: 1em;
+        }
     }
 </style>

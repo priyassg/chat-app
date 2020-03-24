@@ -51,24 +51,25 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .chat-page{
         height: 100%;
         display: grid;
         grid-template-columns: 20% 80%;
-        /* grid-template-rows: 20% 80%; */
-    }
-    .left{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        display: grid;
-        grid-template-rows: 30% 70%;
-    }
-    .chat-room{
-        grid-column-start: 2;
-        grid-row-start: 1;
-    }
 
-
+        .left{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            display: grid;
+            grid-template-rows: 30% 70%;
+            background-color: #ff1a1a;
+            color: white;
+            text-transform: capitalize;
+        }
+        .chat-room{
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+    }
 </style>

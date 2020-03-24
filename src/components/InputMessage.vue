@@ -1,5 +1,7 @@
 <template>
-    <input type=text v-on:keyup.enter="addMessage" v-model="message"/>
+    <div class="input-field">
+        <input type=text placeholder="Type a message..." v-on:keyup.enter="addMessage" v-model="message"/>
+    </div>
 </template>
 
 <script>
@@ -33,3 +35,16 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+    .input-field{
+        box-shadow: 0px 1px 5px grey;
+        z-index: 1;
+        padding: 1rem 1rem 1rem 1rem;
+
+        input{
+            margin-bottom: 2rem;
+            height: 100%;
+            width: 100%;
+        }
+    }
+</style>

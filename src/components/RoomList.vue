@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul v-for="room in this.rooms" :key="room.id">
-            <li><button @click="roomSelected(room.id)">{{room.name}}</button></li>
+            <li @click="roomSelected(room.id)" class="text">{{room.name}}</li>
         </ul>
     </div>
 </template>
@@ -22,3 +22,19 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+    ul{
+        margin: 0;
+        li{
+            list-style: none;
+            width: 100%;
+            height: 3.5rem;
+            line-height: 3.5rem;
+        }
+
+        &:hover{
+            background-color: darkred;
+        }
+    }
+    
+</style>
