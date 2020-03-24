@@ -28,7 +28,7 @@
     "body-parser": "~1.0.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
-    "express": "~4.0.0",
+    "express": "~4.5.0",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
     "serve": "^3.1.0",
