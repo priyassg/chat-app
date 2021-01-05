@@ -14,7 +14,7 @@
   "author": "Ryan Gonzalez",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.4",
     "shortid": "^2.2.8",
     "vue": "^2.6.11",
